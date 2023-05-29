@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Project</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script
+      src="https://kit.fontawesome.com/6f5013579e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section start -->
+    <header>
+      <div id="head-container">
+        <div id="head-right">
+          <img
+            src="https://img.cricketworld.com/images/f-122898/fkqtiglxkaaw0xn.jpg"
+            alt="logo here"
+            id="logo"
+          />
+          <a href="./index.html">
+            <button id="home-button" class="add-button">Home</button></a
+          >
+        </div>
+        <div id="head-left">
+          <div class="search-input">
+            <a href="" target="_blank" hidden></a>
+            <input type="text" placeholder="Enter team Name" />
+            <div class="autocom-box"></div>
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <button
+            id="add-team-button"
+            class="add-button"
+            onclick="addteamclicked()"
+          >
+            Add Team
+          </button>
+          <button
+            id="add-player-button"
+            class="add-button"
+            onclick="addPlayerClicked()"
+          >
+            Add Player
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Header Section end -->
+    <div class="slider" >
+      <div class="slides">
+        <input type="radio" name="radio-btn" id="radio1" />
+        <input type="radio" name="radio-btn" id="radio2" />
+        <input type="radio" name="radio-btn" id="radio3" />
+        <input type="radio" name="radio-btn" id="radio4" />
+
+        <div class="slide">
+          <img src="https://cricfit.com/wp-content/uploads/2023/04/Mumbai-Indians.jpg" alt="" />
+        </div>
+        <div class="slide first">
+          <img src="https://img.jagranjosh.com/images/2022/March/2632022/CSK_player_list_2022_stats_past_records.jpg" alt="" width="250px" height="500px"/>
+        </div>
+        <div class="slide">
+          <img src="https://gumlet.assettype.com/bloombergquint/2023-03/d613d69c-f171-43e1-9cf2-b816622ebf48/Gujarat_Titans.jfif" alt="" />
+        </div>
+        <div class="slide">
+          <img src="https://c.ndtvimg.com/2023-04/18p9vd8_rr-bcci_625x300_23_April_23.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" alt="" />
+        </div>
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
+    </div>
+
+    <h1 id="slogan">2023 IPL teams</h1>
+    <div id="first-main">
+      <div id="container_teams"></div>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <div class="foot">
+          <h1>About Championship</h1>
+          <a href="#">Teams</a>
+          <a href="#">Players</a>
+          <a href="#">Equipments</a>
+          <a href="#">Stadium</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div class="foot">
+          <h1>Teams</h1>
+          <a href="#">Chennai Super Kings</a>
+          <a href="#">Mumbai Indians</a>
+          <a href="#">Kolkata Knight Riders</a>
+          <a href="#">Gujarat Titans</a>
+          <a href="#">Delhi Capitals</a>
+        </div>
+        <div class="foot">
+          <h1>Contact Us</h1>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+          <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
